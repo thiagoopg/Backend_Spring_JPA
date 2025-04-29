@@ -2,8 +2,8 @@
 
 Bem-vindo ao projeto financeiro! Este repositório contém links e informações sobre os dois componentes principais do sistema:
 
-- **[Backend](#backend)**: Construído com Spring Boot e JPA, utilizando MySQL como banco de dados, e gerenciado com Docker Compose.
-- **[Frontend](#frontend)**: Desenvolvido com Angular para fornecer uma interface de usuário rica e responsiva.
+- **[Backend]**: Construído com Spring Boot e JPA, utilizando MySQL como banco de dados, e gerenciado com Docker Compose.
+- **[Frontend]**: Desenvolvido com Angular para fornecer uma interface de usuário rica e responsiva.
 
 ---
 
@@ -58,16 +58,14 @@ Em andamento.
      git clone https://github.com/seu-usuario/backend-repo.git
      cd backend-repo
      ```
-   - Atualize o arquivo `application.yml` com as configurações do banco de dados, se necessário.
-
 3. **Rodando com Docker Compose**:
    - Execute o comando abaixo para inicializar o banco de dados e a aplicação:
      ```bash
      docker-compose up --build
      ```
 
-4. **API Endpoints**:
-   - Acesse a documentação da API (Swagger) em: `http://localhost:8080/swagger-ui.html`
+4. **Execute o projeto**:
+   - Execute a aplicação em src/main/BackendApplication.java
 
 ---
 
@@ -101,7 +99,7 @@ Em andamento.
      ```bash
      ng serve
      ```
-   - Acesse o sistema em: `http://localhost:4200`
+   - Acesse a págoma em: `http://localhost:4200`
 ---
 
 ## Melhorias Futuras
