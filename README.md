@@ -55,7 +55,7 @@ Em andamento.
 2. **Configuração**:
    - Clone o repositório do backend:  
      ```bash
-     git clone https://github.com/seu-usuario/backend-repo.git
+     git clone https://github.com/thiagoopg/Backend_Spring_JPA.git
      cd backend-repo
      ```
 3. **Rodando com Docker Compose**:
@@ -86,7 +86,7 @@ Em andamento.
 2. **Configuração**:
    - Clone o repositório do frontend:  
      ```bash
-     git clone https://github.com/thiagoopg/Frontend_Angular
+     git clone https://github.com/thiagoopg/Frontend_Angular.git
      cd frontend-repo
      ```
    - Instale as dependências:
