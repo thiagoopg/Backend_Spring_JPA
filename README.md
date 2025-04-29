@@ -9,8 +9,8 @@ Bem-vindo ao projeto financeiro! Este repositório contém links e informações
 
 ## Links dos Repositórios
 
-- [Repositório do Backend](https://github.com/seu-usuario/backend-repo)
-- [Repositório do Frontend](https://github.com/seu-usuario/frontend-repo)
+- [Repositório do Backend](https://github.com/thiagoopg/Backend_Spring_JPA)
+- [Repositório do Frontend](https://github.com/thiagoopg/Frontend_Angular)
 
 ---
 
@@ -28,11 +28,11 @@ Abaixo estão os diagramas UML que ilustram aspectos importantes do projeto.
 
 O diagrama abaixo representa a estrutura principal do sistema, mostrando as entidades usadas no backend para gerenciar contas e transações:
 
-![Diagrama UML](path/to/uml-diagram.png)
+![Diagrama UML](./diagramas/estruturaBanco.png)
 
 ### Outros Diagramas
 
-(Adicione outros diagramas UML nesta seção, conforme necessário.)
+Em andamento.
 
 ---
 
@@ -50,7 +50,8 @@ O diagrama abaixo representa a estrutura principal do sistema, mostrando as enti
 
 1. **Pré-requisitos**:
    - [Docker](https://www.docker.com/)
-
+   - Java 17 ou superior
+   - Maven
 2. **Configuração**:
    - Clone o repositório do backend:  
      ```bash
@@ -81,13 +82,13 @@ O diagrama abaixo representa a estrutura principal do sistema, mostrando as enti
 ### Requisitos de Instalação
 
 1. **Pré-requisitos**:
-   - [Node.js](https://nodejs.org/) (versão 16 ou superior)
+   - [Node.js](https://nodejs.org/)
    - [Angular CLI](https://angular.io/cli)
 
 2. **Configuração**:
    - Clone o repositório do frontend:  
      ```bash
-     git clone https://github.com/seu-usuario/frontend-repo.git
+     git clone https://github.com/thiagoopg/Frontend_Angular
      cd frontend-repo
      ```
    - Instale as dependências:
@@ -101,35 +102,6 @@ O diagrama abaixo representa a estrutura principal do sistema, mostrando as enti
      ng serve
      ```
    - Acesse o sistema em: `http://localhost:4200`
-
-4. **Configuração da API**:
-   - Atualize o arquivo `environment.ts` com a URL do backend, se necessário:
-     ```typescript
-     export const environment = {
-       production: false,
-       apiUrl: 'http://localhost:8080/api'
-     };
-     ```
-
----
-
-## Contribuição
-
-1. Faça um fork do repositório.
-2. Crie um branch para a sua feature/bugfix:
-   ```bash
-   git checkout -b minha-feature
-   ```
-3. Faça commit das suas alterações:
-   ```bash
-   git commit -m 'Adicionando minha feature'
-   ```
-4. Envie suas alterações:
-   ```bash
-   git push origin minha-feature
-   ```
-5. Abra um Pull Request.
-
 ---
 
 ## Melhorias Futuras
@@ -139,4 +111,4 @@ O diagrama abaixo representa a estrutura principal do sistema, mostrando as enti
 
 ## Contato
 
-Em caso de dúvidas ou sugestões, entre em contato via [email@example.com](mailto:email@example.com).
+Em caso de dúvidas ou sugestões, entre em contato via [thiago.a.o.lima@gmail.com].
