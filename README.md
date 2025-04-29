@@ -130,4 +130,4 @@ Em andamento.
 
 Em caso de dúvidas ou sugestões, entre em contato por:
   - Linkedin: [https://www.linkedin.com/in/thiago-adriel-oliveira-de-lima/](Link-do-Linkedin)
-  - Email: thiago.a.o.lima@gmail.com(thiago.a.o.lima@gmail.com)
+  - Email: thiago.a.o.lima@gmail.com
