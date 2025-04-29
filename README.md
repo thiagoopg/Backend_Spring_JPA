@@ -1,64 +1,142 @@
-# Projeto Financeiro
+# Projeto Financeiro - Frontend e Backend
 
-Links dos repositórios:
-- **Backend**: https://github.com/seu-usuario/backend-finance
-- **Frontend**: https://github.com/seu-usuario/frontend-finance
+Bem-vindo ao projeto financeiro! Este repositório contém links e informações sobre os dois componentes principais do sistema:
 
----
-
-## 📋 Visão Geral
-
-Este é um sistema web de controle financeiro pessoal, composto por:
-
-- **Backend** em Spring Boot + JPA, com MySQL via Docker Compose.
-- **Frontend** em Angular, consumindo a API REST do backend.
-
-Usuários podem registrar **ganhos** e **gastos**, visualizar relatórios e acompanhar históricos de transações.
+- **[Backend](#backend)**: Construído com Spring Boot e JPA, utilizando MySQL como banco de dados, e gerenciado com Docker Compose.
+- **[Frontend](#frontend)**: Desenvolvido com Angular para fornecer uma interface de usuário rica e responsiva.
 
 ---
 
-## 📑 Sumário
+## Links dos Repositórios
 
-1. [Backend](#backend)  
-   1.1 [Pré-requisitos](#pré-requisitos-backend)  
-   1.2 [Tecnologias](#tecnologias-backend)  
-   1.3 [Instalação e Execução](#instalação-e-execução-backend)  
-   1.4 [Endpoints Principais](#endpoints-principais)  
-2. [Frontend](#frontend)  
-   2.1 [Pré-requisitos](#pré-requisitos-frontend)  
-   2.2 [Tecnologias](#tecnologias-frontend)  
-   2.3 [Instalação e Execução](#instalação-e-execução-frontend)  
-3. [📊 Diagramas UML](#diagramas-uml)  
-4. [🤝 Contribuindo](#contribuindo)  
-5. [⚖️ Licença](#licença)
+- [Repositório do Backend](https://github.com/seu-usuario/backend-repo)
+- [Repositório do Frontend](https://github.com/seu-usuario/frontend-repo)
+
+---
+
+## Visão Geral do Projeto
+
+Este é um sistema para controle financeiro pessoal, permitindo gerenciar contas, registrar transações (ganhos e gastos) e visualizar um histórico consolidado. O sistema é dividido em dois repositórios: o backend fornece a API e a lógica de negócios, enquanto o frontend oferece a interface para os usuários finais.
+
+---
+
+## Diagramas UML
+
+Abaixo estão os diagramas UML que ilustram aspectos importantes do projeto.
+
+### Estrutura de Domínio
+
+O diagrama abaixo representa a estrutura principal do sistema, mostrando as entidades usadas no backend para gerenciar contas e transações:
+
+![Diagrama UML](path/to/uml-diagram.png)
+
+### Outros Diagramas
+
+(Adicione outros diagramas UML nesta seção, conforme necessário.)
 
 ---
 
 ## Backend
 
-### Pré-requisitos (Backend)
-- Java 17+
-- Maven 3.6+
-- Docker & Docker Compose
-- Variáveis de ambiente:
-  - `SPRING_DATASOURCE_URL` (ex: `jdbc:mysql://localhost:3306/finance_db`)
-  - `SPRING_DATASOURCE_USERNAME`
-  - `SPRING_DATASOURCE_PASSWORD`
+### Tecnologias Utilizadas
 
-### Tecnologias (Backend)
-- Spring Boot
-- Spring Data JPA
-- MySQL
-- Docker Compose
+- **Spring Boot**
+- **Spring Data JPA**
+- **MySQL**
+- **Docker Compose**
+- **Hibernate**
 
-### Instalação e Execução (Backend)
-```bash
-# 1. Clonar o repositório
-git clone https://github.com/seu-usuario/backend-finance.git
-cd backend-finance
+### Requisitos de Instalação
 
-# 2. Subir o banco de dados
-docker-compose up -d
+1. **Pré-requisitos**:
+   - [Docker](https://www.docker.com/)
 
-# 3. Executar a aplicação
-./mvnw spring-boot:run
+2. **Configuração**:
+   - Clone o repositório do backend:  
+     ```bash
+     git clone https://github.com/seu-usuario/backend-repo.git
+     cd backend-repo
+     ```
+   - Atualize o arquivo `application.yml` com as configurações do banco de dados, se necessário.
+
+3. **Rodando com Docker Compose**:
+   - Execute o comando abaixo para inicializar o banco de dados e a aplicação:
+     ```bash
+     docker-compose up --build
+     ```
+
+4. **API Endpoints**:
+   - Acesse a documentação da API (Swagger) em: `http://localhost:8080/swagger-ui.html`
+
+---
+
+## Frontend
+
+### Tecnologias Utilizadas
+
+- **Angular**
+- **TypeScript**
+- **Bootstrap** (ou outro framework CSS, caso aplicável)
+
+### Requisitos de Instalação
+
+1. **Pré-requisitos**:
+   - [Node.js](https://nodejs.org/) (versão 16 ou superior)
+   - [Angular CLI](https://angular.io/cli)
+
+2. **Configuração**:
+   - Clone o repositório do frontend:  
+     ```bash
+     git clone https://github.com/seu-usuario/frontend-repo.git
+     cd frontend-repo
+     ```
+   - Instale as dependências:
+     ```bash
+     npm install
+     ```
+
+3. **Rodando a Aplicação**:
+   - Execute o comando abaixo para iniciar o servidor local:
+     ```bash
+     ng serve
+     ```
+   - Acesse o sistema em: `http://localhost:4200`
+
+4. **Configuração da API**:
+   - Atualize o arquivo `environment.ts` com a URL do backend, se necessário:
+     ```typescript
+     export const environment = {
+       production: false,
+       apiUrl: 'http://localhost:8080/api'
+     };
+     ```
+
+---
+
+## Contribuição
+
+1. Faça um fork do repositório.
+2. Crie um branch para a sua feature/bugfix:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Faça commit das suas alterações:
+   ```bash
+   git commit -m 'Adicionando minha feature'
+   ```
+4. Envie suas alterações:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request.
+
+---
+
+## Melhorias Futuras
+
+- Em andamento.
+---
+
+## Contato
+
+Em caso de dúvidas ou sugestões, entre em contato via [email@example.com](mailto:email@example.com).
