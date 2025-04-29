@@ -21,8 +21,8 @@
 
 Bem-vindo ao projeto financeiro! Este repositório contém links e informações sobre os dois componentes principais do sistema:
 
-- **[Backend]**: Construído com Spring Boot e JPA, utilizando MySQL como banco de dados, e gerenciado com Docker Compose.
-- **[Frontend]**: Desenvolvido com Angular para fornecer uma interface de usuário rica e responsiva.
+- **[Backend](https://github.com/thiagoopg/Backend_Spring_JPA)**: Construído com Spring Boot e JPA, utilizando MySQL como banco de dados, e gerenciado com Docker Compose.
+- **[Frontend](https://github.com/thiagoopg/Frontend_Angular)**: Desenvolvido com Angular para fornecer uma interface de usuário rica e responsiva.
 
 ---
 
