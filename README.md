@@ -128,4 +128,6 @@ Em andamento.
 
 ## Contato
 
-Em caso de dúvidas ou sugestões, entre em contato via [thiago.a.o.lima@gmail.com].
+Em caso de dúvidas ou sugestões, entre em contato por:
+Email: thiago.a.o.lima@gmail.com
+Linkedin: [https://www.linkedin.com/in/thiago-adriel-oliveira-de-lima/]
