@@ -1,6 +1,5 @@
 package thiagoopg.com.backend.Controller;
 
-import jakarta.persistence.PostUpdate;
 import thiagoopg.com.backend.Dto.CreateContasDto;
 import thiagoopg.com.backend.Entity.Account;
 import thiagoopg.com.backend.Entity.Transaction;
@@ -14,7 +13,6 @@ import java.util.List;
 /**
  * Controller REST para gerenciamento de contas bancárias.
  * Responsável por receber requisições HTTP e retornar respostas padronizadas.
- *
  * Mapeamento base: "/accounts/" - todos os endpoints começam com este prefixo
  */
 @RestController
@@ -46,7 +44,21 @@ public class ControllerAccount {
                 ResponseEntity.noContent().build() :
                 ResponseEntity.ok(accounts);
     }
+    /**
+     * Recupera todas as contas cadastradas
+     * @return ResponseEntity contendo:
+     *         - Lista de contas (body)
+     *         - HTTP 200 OK            se existirem contas
+     *         - HTTP 204 No Content    se a lista estiver vazia
+     */
 
+    @GetMapping("{id}/transactions")
+    public ResponseEntity<List<Transaction>> getAllTransactionsOfAccountById(@PathVariable Integer id) {
+    List<Transaction> transactions = serviceAccounts.getAllTransactionsOfAccountById(id);
+    return transactions.isEmpty() ?
+            ResponseEntity.noContent().build() :
+            ResponseEntity.ok(transactions);
+    }
     /**
      * Busca uma conta específica por ID
      * @param id ID da conta (path variable)
